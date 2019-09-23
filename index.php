@@ -12,7 +12,16 @@
     Estendere le classi dove possibile
   */
 
+  trait FullName {
+
+    public function printFullName() {
+      return $this -> nome . " " . $this -> cognome;
+    }
+  }
+
   class Persona {
+
+    use FullName;
 
     public $nome;
     public $cognome;
@@ -27,7 +36,7 @@
 
     public function toString() {
 
-      return $this -> nome . " " . $this -> cognome . " - " . $this -> indirizzo;
+      return $this -> printFullName() . " - " . $this -> indirizzo;
     }
   }
 
