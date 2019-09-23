@@ -85,8 +85,8 @@
   $professore1 = new Professore("Giorgio", "Herpes", "Via Catalani, 20", "Primario di Dermatologia", "4000€");
 
 
-  echo $persona1 -> toString() . "<br>";
-  echo $studente1 -> toString() . "<br>";
+  echo $persona1 -> toString() . "<br><br>";
+  echo $studente1 -> toString() . "<br><br>";
   echo $professore1 -> toString() . "<br>";
 
 
